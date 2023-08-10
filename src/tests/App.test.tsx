@@ -1,12 +1,8 @@
 import { screen } from '@testing-library/react';
-import { vi } from 'vitest';
 import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
-// afterEach(() => {
-//   vi.restoreAllMocks();
-// });
 describe('Testando o componente App', () => {
   test('A pagina deve ter o link Home e redireciona para ela', async () => {
     renderWithRouter(<App />);
