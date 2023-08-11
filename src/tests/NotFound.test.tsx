@@ -11,7 +11,9 @@ describe('Testando o componete NotFound', () => {
 
     const verifyImgLink = screen.getByRole('img');
     const imgUrl = verifyImgLink.getAttribute('alt');
+    const imgSrc = verifyImgLink.getAttribute('src');
 
+    expect(imgSrc).toBe('/404.gif');
     expect(imgUrl).toBe('Clefairy pushing buttons randomly with text I have no idea what i\'m doing');
   });
 });
